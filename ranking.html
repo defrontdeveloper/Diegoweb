@@ -12,70 +12,6 @@
 
 <body>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    nav {
-      background-color: #360139;
-      height: 60px;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    .text {
-      font-size: 14px;
-      color: #646464;
-    }
-
-    .container {
-      max-width: 1200px;
-      min-width: 500px;
-      width: 100%;
-      margin: auto;
-      padding: 0 10px;
-    }
-
-    .fx-between {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .fx-item-center {
-      display: flex;
-      align-items: center;
-    }
-
-    .listas {
-      list-style: none;
-    }
-
-    .listas a {
-      color: #fff;
-      margin-left: 40px;
-      font-size: 14px;
-    }
-
-    .button-one {
-      background-color: #8b1e91;
-      padding: 14px 46px;
-      display: inline-block;
-      color: #fff;
-      /* font-weight: bolder; */
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-    }
-
     /* header */
     .header {
       background-color: #5a065e;
@@ -174,7 +110,7 @@
       font-weight: 500;
     }
     .ranking-table img {
-      width: 50px;
+      width: 70px;
     }
     .ranking tr:nth-child(even){
       background-color: #f2f2f2;
@@ -231,113 +167,118 @@
         <li><a href="./videos.html">Videos</a></li>
         <li><a href="./musica.html">Música</a></li>
         <li><a href="./contactos.html">Contáctanos</a></li>
+        <li>
+          <img class="imagen-user" src="./img/user.png" alt="">
+        </li>
       </ul>
     </div>
   </nav>
 
   <section class="ranking">
-    <div class="container">
+    <div class="container ranking-white">
       <h2>Ranking TOP 10</h2>
       <table class="ranking-table">
         <thead>
           <tr>
             <td>#</td>
-            <td>Álbum</td>
             <td>Artista</td>
             <td>Canción</td>
+            <!-- <td>Álbum</td> -->
+            <td>Oyentes</td>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="text">1</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i1.jpg" alt="">
+              <span class="text">Queen</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Innuendo</td>
+            <td class="text">30M</td>
           </tr>
           <tr>
             <td class="text">2</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i2.jpg" alt="">
+              <span class="text">Red Hot Chili Peppers </span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Unlimited Love</td>
+            <td class="text">28M</td>
           </tr>
           <tr>
             <td class="text">3</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i3.jpg" alt="">
+              <span class="text">Guns N’ Roses</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Chinese Democracy </td>
+            <td class="text">27M</td>
           </tr>
           <tr>
             <td class="text">4</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i4.jpg" alt="">
+              <span class="text">Arctic Monkeys</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Tranquility Base Hotel & Casino</td>
+            <td class="text">24M</td>
           </tr>
           <tr>
             <td class="text">5</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i5.jpg" alt="">
+              <span class="text">The Strokes</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">The New Abnormal </td>
+            <td class="text">20M</td>
           </tr>
           <tr>
             <td class="text">6</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i6.jpg" alt="">
+              <span class="text">AC/DC </span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Let There Be Rock</td>
+            <td class="text">20M</td>
           </tr>
           <tr>
             <td class="text">7</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i7.jpg" alt="">
+              <span class="text">Foo Fighters </span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Medicine At Midnight</td>
+            <td class="text">19M</td>
           </tr>
           <tr>
             <td class="text">8</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i8.jpg" alt="">
+              <span class="text">The Beatles</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">Abbey Road  </td>
+            <td class="text">18M</td>
           </tr>
           <tr>
             <td class="text">9</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i9.jpg" alt="">
+              <span class="text">Pink Floyd</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">The Endless River</td>
+            <td class="text">18M</td>
           </tr>
           <tr>
             <td class="text">10</td>
             <td class="fx-item-center">
-              <img src="./img/ranking/r1.jpg" alt="">
-              <span class="text">Album Ramones</span>
+              <img src="./img/ranking/i10.jpg" alt="">
+              <span class="text">Nirvana</span>
             </td>
-            <td class="text">Los Ramones</td>
-            <td class="text">Canción Ramones</td>
+            <td class="text">In Utero</td>
+            <td class="text">17M</td>
           </tr>
+
         </tbody>
       </table>
 
