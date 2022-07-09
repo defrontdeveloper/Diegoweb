@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Contáctanos</title>
+</head>
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    nav {
+      background-color: #360139;
+      height: 60px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .text {
+      font-size: 14px;
+      color: #646464;
+    }
+
+    .container {
+      max-width: 1200px;
+      min-width: 500px;
+      width: 100%;
+      margin: auto;
+      padding: 0 10px;
+    }
+
+    .fx-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .fx-item-center {
+      display: flex;
+      align-items: center;
+    }
+
+    .listas {
+      list-style: none;
+    }
+
+    .listas a {
+      color: #fff;
+      margin-left: 40px;
+      font-size: 14px;
+    }
+
+    .button-one {
+      background-color: #8b1e91;
+      padding: 14px 46px;
+      display: inline-block;
+      color: #fff;
+      /* font-weight: bolder; */
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* header */
+    .header {
+      background-color: #5a065e;
+    }
+
+    .header-music {
+      padding: 3rem 0;
+    }
+
+    .header-title {
+      font-size: 70px;
+      max-width: 550px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .header-title span {
+      color: #f9b6fb;
+    }
+
+    .header-img {
+      max-width: 500px;
+      min-width: 200px;
+    }
+
+    /* los mas escuchados */
+    .escuchado {
+      padding: 3rem 0;
+    }
+
+    .escuchado-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+    }
+
+    .escuchado-item img {
+      height: 150px;
+      width: 250px;
+    }
+
+    .escuchado-item p {
+      line-height: 1.3;
+      padding-left: 20px;
+    }
+
+    .escuchado-button {
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    /* registro */
+    /* .registro {
+      padding: 3rem 0;
+      background-color: #281d3b;
+    } */
+
+    .contactanos {
+      padding: 4rem 0;
+      background-color: #281d3b;
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .form input[type="text"] {
+      width: 90%;
+      height: 40px;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: none;
+      font-size: 14px;
+      padding: 5px 20px;
+    }
+    textarea {
+      width: 90%;
+      height: 150px;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: none;
+      font-size: 14px;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+      resize: none;
+    }
+
+    .registro-form {
+      background-color: #fff;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* footer */
+    footer {
+      background-color: #000;
+      padding: 40px 0;
+      color: #a4a4a4;
+    }
+
+    .footer-iconos {
+      margin: 14px 0;
+    }
+
+    .footer-contenido {
+      text-align: center;
+    }
+
+    .footer-redes {
+      width: 25px;
+      margin: 0 5px;
+    }
+
+    @media screen and (max-width: 990px) {
+      .header-title {
+        font-size: 36px;
+      }
+      .button-one {
+        padding: 10px 24px;
+        font-size: 14px;
+      }
+      .escuchado-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <nav class="fx-item-center">
+    <div class="container fx-between">
+      <a class="logo" href="/">
+        <img src="./img/logo.png" alt="">
+        <span>MUSIC BOX</span>
+      </a>
+      <ul class="fx-item-center listas">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="./ranking.html">Ranking</a></li>
+        <li><a href="./videos.html">Videos</a></li>
+        <li><a href="./musica.html">Música</a></li>
+        <li><a class="activo"  href="./contactos.html">Contáctanos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="registro contactanos">
+    <div class="container">
+      <div class="registro-form">
+        <h2>¿Tienes dudas? Contáctanos</h2>
+        <form class="form" action="">
+          <input type="text" name="" placeholder="Ingresa tus nombres">
+          <input type="text" name="" placeholder="Ingresa tus apellidos">
+          <input type="text" name="" placeholder="Ingresa tu correo">
+          <textarea placeholder="Envía tu comentario" cols="30" rows="10"></textarea>
+          <br>
+          <button class="button-one" href="">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-contenido">
+        <small>Mis redes</small>
+        <div class="footer-iconos">
+          <img class="footer-redes" src="./img/redes/facebook.png" alt="">
+          <img class="footer-redes" src="./img/redes/instagram.png" alt="">
+          <img class="footer-redes" src="./img/redes/spotify.png" alt="">
+          <img class="footer-redes" src="./img/redes/twitter.png" alt="">
+        </div>
+        <small><i>Diseñado por: Diego</i></small>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
