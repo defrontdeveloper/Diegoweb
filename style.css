@@ -98,3 +98,10 @@ h1 {
   width: 30px;
   margin-left: 20px;
 }
+
+.ico-search {
+  position: absolute;
+  width: 25px;
+  top: 14px;
+  right: 4rem;
+}

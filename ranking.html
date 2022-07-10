@@ -74,6 +74,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      position: relative;
     }
 
     .form input[type="text"] {
@@ -183,6 +184,10 @@
   <section class="ranking">
     <div class="container ranking-white">
       <h2>Ranking TOP 10</h2>
+      <div class="form">
+        <input type="text" placeholder="Buscar">
+        <img class="ico-search" src="./img/search.png" alt="">
+      </div>
       <table class="ranking-table">
         <thead>
           <tr>
@@ -295,8 +300,8 @@
 
   <section class="escuchado">
     <div class="container">
+      <h2>Menciones Honoríficas</h2>
       <div class="escuchado-grid">
-
         <div class="escuchado-item fx-item-center">
           <img src="./img/imgranking/rage.jpg" alt="img">
           <p class="text">Rage Against the Machine es un grupo musical estadounidense de rap metal fundado en el año

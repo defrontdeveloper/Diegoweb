@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="./img/mus.ico"> 
+  <link rel="icon" href="./img/mus.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
@@ -73,12 +73,20 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      position: relative;
+    }
+
+    .ico-search {
+      position: absolute;
+      width: 25px;
+      top: 14px;
+      right: 4rem;
     }
 
     .form input[type="text"] {
       width: 90%;
       height: 40px;
-      margin-bottom: 20px;
+   
       background-color: #f5f5f5;
       border: none;
       font-size: 14px;
@@ -101,8 +109,9 @@
 
     .ranking-white {
       background-color: #fff;
-      padding: 2rem !important;
+      padding: 2rem 2rem 4rem 2rem !important;
     }
+
     .ranking-white h2 {
       padding-left: 2.5rem;
     }
@@ -121,6 +130,7 @@
 
     .ranking-table .img {
       width: 50px;
+      border-radius: 10px;
     }
 
     .ranking .controls {
@@ -191,107 +201,132 @@
   <section class="ranking">
     <div class="container ranking-white">
       <h2>Música</h2>
+      <div class="form">
+        <input type="text" placeholder="Buscar">
+        <img class="ico-search" src="./img/search.png" alt="">
+      </div>
       <table class="ranking-table">
         <thead>
           <tr>
-            <td>Canción</td>
-            <td>Reproducir</td>
+            <td>Nombre</td>
+            <td>Artista</td>
+            <td>Álbum</td>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img1.jpg" alt="">
-              <span class="text">“Bohemian Rhapsody”, Queen, A Night at the Opera</span>
+              <span class="text">A Night at the Opera</span>
             </td>
-            <td class="text">
+            <td>Queen</td>
+            <td>Bohemian Rhapsody</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img2.jpg" alt="">
-              <span class="text">“Back in Black”, AC/DC, Back in Black</span>
+              <span class="text">Back in Black</span>
             </td>
-            <td class="text">
+            <td>AC/DC</td>
+            <td>Back in Black</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img3.jpg" alt="">
-              <span class="text">“Stairway to Heaven”, Led Zepellin, Led Zepellin IV</span>
+              <span class="text">Led Zepellin, </span>
             </td>
-            <td class="text">
+            <td>Stairway to Heaven</td>
+            <td>Led Zepellin IV</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img4.jpg" alt="">
-              <span class="text">“Roxanne”, The Police, Outlandos d’Amour</span>
+              <span class="text">Roxanne</span>
             </td>
-            <td class="text">
+            <td>The Police</td>
+            <td>Outlandos d’Amour</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img5.jpg" alt="">
-              <span class="text">“My Generation”, The Who, The Who Sings My Generation</span>
+              <span class="text">My Generation</span>
             </td>
-            <td class="text">
+            <td>The Who</td>
+            <td>The Who Sings My Generation</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img6.jpg" alt="">
-              <span class="text">“Come Together”, The Beatles, Abbey Road</span>
+              <span class="text">Come Together</span>
             </td>
-            <td class="text">
+            <td>The Beatles</td>
+            <td>Abbey Road</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img7.jpg" alt="">
-              <span class="text">“Sweet Child o' Mine”, Guns n' Rose, Appetite for Destruction</span>
+              <span class="text">Sweet Child o' Mine</span>
             </td>
-            <td class="text">
+            <td>Guns n' Rose</td>
+            <td>Appetite for Destruction</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img8.jpg" alt="">
-              <span class="text">“Sunday Bloody Sunday”, U2, War</span>
+              <span class="text">Sunday Bloody Sunday</span>
             </td>
-            <td class="text">
+            <td>U2</td>
+            <td>War</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img9.jpg" alt="">
-              <span class="text">“Californication”, Red Hot Chili Peppers, Californication</span>
+              <span class="text">Californication</span>
             </td>
-            <td class="text">
+            <td>Red Hot Chili Peppers</td>
+            <td>Californication</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-          <tr>
+          <tr class="text">
             <td class="fx-item-center">
               <img class="img" src="./img/musica/img10.jpg" alt="">
-              <span class="text">“Last Nite”, The Strokes, Is This It</span>
+              <span class="text">Is This It</span>
             </td>
-            <td class="text">
+            <td>The Strokes</td>
+            <td>Last Nite</td>
+            <!-- <td class="text">
               <img class="controls" src="./img/controls.jpg" alt="">
-            </td>
+            </td> -->
           </tr>
-     
 
-  
+
+
 
         </tbody>
       </table>
